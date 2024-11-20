@@ -1,0 +1,30 @@
+.toggle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff3e6;
+  }
+  
+  .toggle-header {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "Verdana", sans-serif;
+  }
+  
+  .toggle-button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-button:hover {
+    background-color: #218838;
+  }
