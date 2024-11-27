@@ -1,12 +1,19 @@
 import "./mss.css";
 import React, { useState } from "react";
 import Message1 from "./mass";
+import youtuImage from './youtu.png';
+
+function Pictures(){
+    return(
+        <img src={youtuImage} alt="YouTube logo" style={{ width: '1500px', height: 'auto' }}  />
+    );
+}
 
 function Mss() {
     const [msgLists, setMsgLists] = useState([
-        "안녕하세요. 오늘의 일정입니다.",
-        "점심시간이 11시 30분으로 변경되었습니다.",
-        "이제 곧 회의가 시작됩니다."
+        "와 엄청 안좋아졌네",
+        "아 너프는 좀..",
+        "이게 맞아?"
     ]);
 
     const [inputValue, setInputValue] = useState(''); // 입력값 상태
@@ -28,9 +35,16 @@ function Mss() {
         setInputValue(''); // 입력값 초기화
     };
 
+
     return (
         <div>
-            <h1>Message 컴포넌트</h1>
+            <Pictures />
+            <br></br>
+
+            {/* 메시지 리스트 출력 */}
+            {msgLists.map((item, index) => (
+                <Message1 key={index} msg={item} />
+            ))}
             <input 
                 type="text" 
                 value={inputValue} 
@@ -38,11 +52,6 @@ function Mss() {
                 placeholder="메시지를 입력하세요" 
             />
             <button onClick={handleAddMessage}>전송</button>
-
-            {/* 메시지 리스트 출력 */}
-            {msgLists.map((item, index) => (
-                <Message1 key={index} msg={item} />
-            ))}
         </div>
     );
 }
