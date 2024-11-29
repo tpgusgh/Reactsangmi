@@ -11,7 +11,6 @@ function Message(props){
             className="image"
             src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
             />
-            
             <div className="container">
                 <span
                 className="nameText"

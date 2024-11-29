@@ -2,7 +2,7 @@ import "./mss.css";
 import React, { useState } from "react";
 import Message1 from "./mass";
 import youtuImage from './youtu.png';
-
+import "../message.css"
 function Pictures(){
     return(
         <img src={youtuImage} alt="YouTube logo" style={{ width: '1500px', height: 'auto' }}  />
@@ -37,7 +37,7 @@ function Mss() {
 
 
     return (
-        <div>
+        <div className="wrapper">
             <Pictures />
             <br></br>
 

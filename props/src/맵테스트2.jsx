@@ -9,7 +9,6 @@ function 맵테스트2(){
     console.log(result) 
     return(
         <div>
-            
             <h1>식료품 리스트</h1>
             {
                 items.map((item) => {

@@ -1,17 +1,18 @@
-import { useState } from "react"
-
+import Event from './event'
+import Message from './message'
+import Maptest1 from './Maptest1'
+import MapTest from './MapTest'
+import 맵테스트2 from './맵테스트2'
+import Mss from './message/mss'
+import DEE from './DEE'
+import InputText from './inputText'
 function App() {
-  
-  const [count, setCount] = useState(0);
   return (
     <div>
-      <h1>Counter</h1>
-      <h2>{count}번 클릭했음</h2>
-      <button onClick={()=> setCount(count+1)}>증가</button>
-      <button onClick={()=> setCount(count-1)}>감소</button>
-      <button onClick={()=> setCount(count-count)}>리셋</button>
+      <Mss />
+
     </div>
   )
 }
 
-export default App
+export default App;
