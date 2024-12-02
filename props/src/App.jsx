@@ -6,10 +6,11 @@ import 맵테스트2 from './맵테스트2'
 import Mss from './message/mss'
 import DEE from './DEE'
 import InputText from './inputText'
+import InputText2 from './inputTest2'
 function App() {
   return (
     <div>
-      <Mss />
+      <InputText2 />
 
     </div>
   )
