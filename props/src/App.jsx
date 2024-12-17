@@ -7,11 +7,12 @@ import Mss from './message/mss'
 import DEE from './DEE'
 import InputText from './inputText'
 import InputText2 from './inputTest2'
+import But from './But'
 function App() {
   return (
     <div>
-      <InputText2 />
-
+      <InputText2/>
+      <But />
     </div>
   )
 }

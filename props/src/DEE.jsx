@@ -21,8 +21,13 @@ function DEE(){
                 newmsg.map((item) => {return <li>{item}</li>})
                 
             }
+            <p>필터 거친거</p>
             {
                 abc.map((item) => {return <li>{item}</li>})
+            }
+            <p>map 안에 필터</p>
+            {
+                newmsg.map((item) => {return item === "허동운" ? (<li>{item}</li>) : (<></>)})
             }
         </div> 
     );
