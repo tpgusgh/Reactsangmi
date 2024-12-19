@@ -3,7 +3,7 @@ import { useState } from "react";
 function InputText2(){
     const Auser = {
         id: 0,
-        name : '김태현',
+        name : '김밥말아김밥',
         email : 'hyunho@gmail.com',
     };
     const userAdd = {
