@@ -31,7 +31,7 @@ function App() {
       <input value={nickname} name="nickname" placeholder="닉네임을 입력하세요" type="text" onChange={(e)=> {setInputs({...inputs, [e.target.name] : e.target.value})}} />
       <input value={email} name="email" placeholder="이메일을 입력하세요" type="text" onChange={(e)=> {setInputs({...inputs, [e.target.name] : e.target.value})}} />
       <p />
-      <button type="submit" onClick={() => alert({name} + "입력이 완료되었습니다.")}>등록</button>
+      <button type="submit" onClick={() => alert(`${name}입력이 완료되었습니다.`)}>등록</button>
     </form>
     
     <button onClick={rezero}>초기화</button>
